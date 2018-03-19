@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 import { D3Service, D3_DIRECTIVES } from './d3';
 
@@ -20,7 +21,9 @@ import { SHARED_VISUALS } from './visuals/shared';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MatButtonModule, 
+    MatCheckboxModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]
